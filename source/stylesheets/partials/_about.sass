@@ -1,0 +1,20 @@
+#about
+  padding: 4em 0
+  color: $color-about-gray-p
+
+  $categories: fatigue, borders, worry, anxiety
+
+  h2
+    color: $color-about-gray-h2
+
+  h3
+    margin: 2em 0 2em 0
+    color: $color-about-gray-h3
+
+  @each $category in $categories
+    ##{$category}
+      background: url(image_path('section2/#{$category}.png')) no-repeat
+      height: 48px
+      width: 48px
+      margin: 0 auto
+      margin-top: 4em

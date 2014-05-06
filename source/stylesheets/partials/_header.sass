@@ -1,0 +1,83 @@
+.navbar-inverse
+  border: 0
+  min-height: 75px
+  background-color: $color-bg-green
+  background-image: none
+
+  .navbar-header
+    .navbar-toggle
+      background: url(image_path('section1/threelines.png')) no-repeat
+      width: 37px
+      height: 24px
+      border: 0
+      background-size: contain
+
+  .navbar-nav
+    margin-top: 0.8em
+    float: right
+
+    li
+      a
+        font-size: 16px
+        font-weight: 700
+        color: white
+        opacity: .6
+        text-shadow: none
+
+        &:hover
+          opacity: 1
+
+.logo-nav
+  background: url(image_path('section1/logo.png')) no-repeat
+  width: 179px
+  height: 26px
+  margin-top: 1.5em
+
+.logo
+  @extend .logo-nav
+  margin: 2em auto 0 auto
+
+// Chaos code to override bootstrap default behaviour
+// Need refactor on this
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus
+  background-color: transparent !important
+  opacity: 1
+
+.navbar-inverse .navbar-nav > .active > a
+  background-image: none
+  box-shadow: none
+  background-repeat: no-repeat
+// end of chaos code
+
+#home
+  @include backstrech('section1/header_bg.jpg')
+
+  padding: 5em 0 5px 0
+
+  h1
+    margin: 4em 0 0 0
+    color: white
+    line-height: 1.5
+
+  .sub
+    margin: 3em 0 4em
+
+  p
+    color: white
+    line-height: 2
+
+  #avail
+    margin-top: .5em
+
+  .header-image
+    background: url(image_path('section1/iPad.png')) no-repeat
+    width: 332px
+    height: 402px
+    margin-top: 7em
+
+  .header-image-mobile
+    background: url(image_path('section1/ipad.png')) no-repeat
+    width: 262px
+    height: 335px
+    margin: 0 auto
+    margin-top: 4em
