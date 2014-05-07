@@ -16,6 +16,11 @@
   background-size: cover
   height: 100%
 
+@mixin bg-image($image, $width, $height)
+  background: url(image_path($image)) no-repeat
+  height: $height
+  width: $width
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic)
 
 body

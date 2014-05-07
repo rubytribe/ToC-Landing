@@ -6,9 +6,7 @@
 
   .navbar-header
     .navbar-toggle
-      background: url(image_path('section1/threelines.png')) no-repeat
-      width: 37px
-      height: 24px
+      @include bg-image('section1/threelines.png', 24px, 37px)
       border: 0
       background-size: contain
 
@@ -28,9 +26,7 @@
           opacity: 1
 
 .logo-nav
-  background: url(image_path('section1/logo.png')) no-repeat
-  width: 179px
-  height: 26px
+  @include bg-image('section1/logo.png', 179px, 26px)
   margin-top: 1.5em
 
 .logo
@@ -60,7 +56,7 @@
     line-height: 1.5
 
   .sub
-    margin: 3em 0 4em
+    margin: 3em 0 3em
 
   p
     color: white
@@ -70,14 +66,10 @@
     margin-top: .5em
 
   .header-image
-    background: url(image_path('section1/iPad.png')) no-repeat
-    width: 332px
-    height: 402px
-    margin-top: 7em
+    @include bg-image('section1/iPad.png', 332px, 402px)
+    margin-top: 9em
 
   .header-image-mobile
-    background: url(image_path('section1/ipad.png')) no-repeat
-    width: 262px
-    height: 335px
+    @include bg-image('section1/ipad.png', 262px, 335px)
     margin: 0 auto
     margin-top: 4em

@@ -6,9 +6,7 @@
 
   @each $image in $imgs
     ##{$image}
-      background: url(image_path('section6/#{$image}.png')) no-repeat
-      width: 20px
-      height: 20px
+      @include bg-image('section6/#{$image}.png', 20px, 20px)
       margin: 1em auto 1em auto
 
   .social
@@ -19,9 +17,7 @@
 
   @each $social in $social-icons
     .social-icon-#{$social}
-      background: url(image_path('section6/#{$social}.png')) no-repeat
-      height: 38px
-      width: 38px
+      @include bg-image('section6/#{$social}.png', 38px, 38px)
       display: inline-block
       margin-left: 20px
 
