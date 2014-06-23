@@ -65,9 +65,15 @@
   #avail
     margin-top: .5em
 
+  .ipadCont
+    position: relative
+
   .header-image
-    @include bg-image('section1/iPad.png', 332px, 402px)
+    @include bg-image('section1/ipad-hands.png', 441px, 406px)
     margin-top: 9em
+    position: absolute
+    top: -30px
+    z-index: 4
 
   .header-image-mobile
     @include bg-image('section1/ipad.png', 262px, 335px)

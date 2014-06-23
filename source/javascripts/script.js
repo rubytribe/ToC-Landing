@@ -7,3 +7,9 @@ $(document).ready(function() {
     this.console = { log: function() { } };
   }
 });
+
+$(window).load(function() {
+    $('.flexslider').flexslider({
+    	directionNav: false
+    });
+  });
