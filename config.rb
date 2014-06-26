@@ -22,10 +22,10 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.method = :rsync
-  deploy.host   = "www.example.com"
-  deploy.user   = "example"
-  deploy.path   = "/public_html"
+  deploy.method = :sftp
+  deploy.host   = "sftp.dc1.gpaas.net"
+  deploy.user   = "78679"
+  deploy.path   = "/vhosts/tiredofcancerapp.com/htdocs"
   # Optional Settings
   deploy.port  = 22
   deploy.clean = true
